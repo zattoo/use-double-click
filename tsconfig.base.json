@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "types": [],
+        "moduleResolution": "node",
+        "target": "esnext",
+        "module": "esnext",
+        "resolveJsonModule": false,
+        "allowSyntheticDefaultImports": true,
+        "preserveSymlinks": true,
+        "jsx": "preserve",
+        "allowJs": true,
+        "checkJs": true,
+        "maxNodeModuleJsDepth": 30,
+        "emitDeclarationOnly": true,
+        "noEmitOnError": true,
+        "declaration": true,
+        "declarationMap": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "strictNullChecks": false
+    }
+}

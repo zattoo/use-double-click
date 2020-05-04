@@ -53,10 +53,6 @@ export type clickEvent = (event?: import("react").SyntheticEvent<Element, Event>
 
 Open up an issue or pull request and participate.
 
-### Authors
-
-* Nitzan Nashi
-
 ---
 
 MIT License.

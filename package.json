@@ -16,7 +16,7 @@
     "component"
   ],
   "type": "module",
-  "main": "index.js",
+  "main": "lib/index.js",
   "bugs": {
     "url": "https://github.com/zattoo/use-double-click/issues"
   },

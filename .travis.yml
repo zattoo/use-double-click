@@ -20,8 +20,10 @@ jobs:
         - npm run build
 
     - stage: publish
-      if: (branch = production) AND NOT type = pull_request
+      before_install:
+        - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+      install:
+        - npm ci
+        - npm i @zattoo/zploy@1.0.0-rc.0 -g
       script:
-        - npm i @zattoo/zploy@1.0.0-beta.5 -g
-        - npm run build
         - zploy --gh_token=$GH_TOKEN --npm_token=$NPM_TOKEN

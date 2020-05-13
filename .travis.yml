@@ -20,6 +20,7 @@ jobs:
         - npm run build
 
     - stage: publish
+      if: (branch = production) AND NOT (type = pull_request)
       before_install:
         - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
       install:

@@ -1,7 +1,7 @@
 {
   "name": "@zattoo/use-double-click",
   "version": "1.0.0-alpha.0",
-  "description": "React hook for combining double-click function into click event, as well as repeatable double-click.",
+  "description": "React hook for continuous double-clicks and combining click and double-click events",
   "homepage": "https://github.com/zattoo/use-double-click",
   "repository": {
     "type": "git",
@@ -9,9 +9,7 @@
   },
   "keywords": [
     "react",
-    "hooks",
-    "click",
-    "event",
+    "hook",
     "double-click"
   ],
   "type": "module",
@@ -23,7 +21,8 @@
   "license": "MIT",
   "scripts": {
     "test:lint": "eslint . --ext .js,.jsx --cache --cache-location ./.tmp/.eslintcache",
-    "test:types": "tsc --noemit"
+    "test:types": "tsc --noemit",
+    "test": "npm run test:lint && npm run test:types"
   },
   "dependencies": {
     "react": "^16.8.0"

@@ -15,4 +15,4 @@ jobs:
       - run: npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
       - run: npm ci
       - run: npm i @zattoo/zploy@1.0.0-rc.0 -g
-      - run: zploy --gh_token=${{ GH_TOKEN }} --npm_token=${{ NPM_TOKEN }}
+      - run: zploy --gh_token=${{ secrets.GH_TOKEN }} --npm_token=${{ secrets.NPM_TOKEN }}

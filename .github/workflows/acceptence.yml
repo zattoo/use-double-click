@@ -1,0 +1,24 @@
+name: Acceptance
+
+on: [pull_request]
+
+jobs:
+  test:
+    name: install & test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.1'
+      - uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - run: npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
+      - run: echo '{"password":"'${{ secrets.PASSWORD }}'","zapi":{"baseUrl":"https://zattoo.com"}}' >config/secrets.json
+      - run: npm ci
+      - run: npm run build
+      - run: npm run lint

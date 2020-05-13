@@ -1,6 +1,0 @@
-.DS_Store/
-.github/
-.idea/
-node_modules/
-.travis.yml
-npm-debug.log

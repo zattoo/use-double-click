@@ -13,8 +13,9 @@ const DEFAULT_OPTIONS = {timeout: 200};
  * @returns {clickEvent}
  */
 export const useDoubleClick = (doubleClick, click, options = DEFAULT_OPTIONS) => {
-    options = {
-        ...DEFAULT_OPTIONS,
+    /** @type {Options} */
+    const options = {
+        timeout: 200,
         ...options,
     };
 

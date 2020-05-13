@@ -6,11 +6,11 @@ import {
 /**
  * @param {clickEvent} doubleClick
  * @param {clickEvent} [click]
- * @param {Options} [options]
+ * @param {UseDoubleClickOptions} [options]
  * @returns {clickEvent}
  */
 export const useDoubleClick = (doubleClick, click, options) => {
-    /** @type {Options} */
+    /** @type {UseDoubleClickOptions} */
     options = {
         timeout: 200,
         ...options,
@@ -45,6 +45,6 @@ export const useDoubleClick = (doubleClick, click, options) => {
  */
 
 /**
- * @typedef {Object} Options
+ * @typedef {Object} UseDoubleClickOptions
  * @prop {number} [timeout]
  */

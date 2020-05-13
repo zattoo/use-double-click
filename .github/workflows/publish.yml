@@ -1,10 +1,11 @@
-name: Acceptance
+name: Publish
 
-on: [pull_request]
+on:
+  pull_request:
+    - production
 
 jobs:
-  test:
-    name: test
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,5 +14,5 @@ jobs:
           node-version: '14.1'
       - run: npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
       - run: npm ci
-      - run: npm run test:lint
-      - run: npm run test:type
+      - run: npm i @zattoo/zploy@1.0.0-rc.0 -g
+      - run: zploy --gh_token=$GH_TOKEN --npm_token=$NPM_TOKEN

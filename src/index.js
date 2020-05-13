@@ -3,15 +3,19 @@ import {
     useRef,
 } from 'react';
 
-const DEFAULT_TIMEOUT = 200;
-
 /**
  * @param {clickEvent} doubleClick
  * @param {clickEvent} [click]
- * @param {number} [timeout]
+ * @param {UseDoubleClickOptions} [options]
  * @returns {clickEvent}
  */
-export const useDoubleClick = (doubleClick, click, timeout) => {
+export const useDoubleClick = (doubleClick, click, options) => {
+    /** @type {UseDoubleClickOptions} */
+    options = {
+        timeout: 200,
+        ...options,
+    };
+
     /** @type {{ current: number }} */
     const clickTimeout = useRef();
 
@@ -27,15 +31,20 @@ export const useDoubleClick = (doubleClick, click, timeout) => {
         if (click && /** @type {React.UIEvent} */(event).detail === 1) {
             clickTimeout.current = setTimeout(() => {
                 click(event);
-            }, timeout || DEFAULT_TIMEOUT);
+            }, options.timeout);
         }
         if (/** @type {React.UIEvent} */(event).detail % 2 === 0) {
             doubleClick(event);
         }
-    }, [click, doubleClick, timeout]);
+    }, [click, doubleClick, options.timeout]);
 };
 
 /**
  * @callback clickEvent
  * @param {React.SyntheticEvent} [event]
+ */
+
+/**
+ * @typedef {Object} UseDoubleClickOptions
+ * @prop {number} [timeout]
  */

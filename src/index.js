@@ -48,5 +48,5 @@ export const useDoubleClick = (doubleClick, click, options = DEFAULT_OPTIONS) =>
 
 /**
  * @typedef {Object} Options
- * @prop {number} timeout
+ * @prop {number} [timeout]
  */

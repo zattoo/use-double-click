@@ -9,9 +9,9 @@ import {
  * @param {Options} [options]
  * @returns {clickEvent}
  */
-export const useDoubleClick = (doubleClick, click, options = DEFAULT_OPTIONS) => {
+export const useDoubleClick = (doubleClick, click, options) => {
     /** @type {Options} */
-    const options = {
+    options = {
         timeout: 200,
         ...options,
     };

@@ -3,9 +3,6 @@ import {
     useRef,
 } from 'react';
 
-/** @type {Options} */
-const DEFAULT_OPTIONS = {timeout: 200};
-
 /**
  * @param {clickEvent} doubleClick
  * @param {clickEvent} [click]

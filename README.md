@@ -37,7 +37,7 @@ export const Example = () => {
 - `doubleClick: (event? React.SyntheticEvent) => void`: double-click function to be executed when user double-clicks (single or multiple times) on the bounded component.
 - `click?: (event? React.SyntheticEvent) => void`: click function to be executed when user clicks (single time) on the bounded component.
 - `options?: Object`: contains options for the hook,
-    - `timeout: number`: number of milliseconds to detect double-click event
+    - `timeout?: number`: number of milliseconds to detect double-click event
 
 ### Found an issue or have a feature request?
 

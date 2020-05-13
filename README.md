@@ -18,7 +18,7 @@ export const Example = () => {
     const hybridClick = useDoubleClick(
         () => setDoubleClickCount(doubleClickCount + 1),
         () => setClickCount(clickCount+1),
-        { timeout: 300}
+        {timeout: 300},
     );
 
     return (
@@ -42,4 +42,3 @@ export const Example = () => {
 ### Found an issue or have a feature request?
 
 Open up an issue or pull request and participate.
-

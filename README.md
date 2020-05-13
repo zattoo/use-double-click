@@ -18,7 +18,7 @@ export const Example = () => {
     const hybridClick = useDoubleClick(
         () => setDoubleClickCount(doubleClickCount + 1),
         () => setClickCount(clickCount+1),
-        300
+        { timeout: 300}
     );
 
     return (
@@ -33,17 +33,11 @@ export const Example = () => {
 }
 ```
 
-### Call Signature
-
-```typescript
-export function useDoubleClick(doubleClick: clickEvent, click?: clickEvent, timeout?: number): clickEvent;
-export type clickEvent = (event?: import("react").SyntheticEvent<Element, Event>) => any;
-```
-
 ### Parameters
 - `doubleClick: (event? React.SyntheticEvent) => void`: double-click function to be executed when user double-clicks (single or multiple times) on the bounded component.
 - `click?: (event? React.SyntheticEvent) => void`: click function to be executed when user clicks (single time) on the bounded component.
-- `timeout?: number`: number of milliseconds to detect double-click event
+- `options?: Object`: contains options for the hook,
+    - `timeout: number`: number of milliseconds to detect double-click event
 
 ### Found an issue or have a feature request?
 

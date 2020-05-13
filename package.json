@@ -1,6 +1,6 @@
 {
   "name": "@zattoo/use-double-click",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.0",
   "description": "React hook for combining double-click function into click event, as well as repeatable double-click.",
   "homepage": "https://github.com/zattoo/use-double-click",
   "repository": {
@@ -12,29 +12,26 @@
     "hooks",
     "click",
     "event",
-    "double-click",
-    "component"
+    "double-click"
   ],
   "type": "module",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "bugs": {
     "url": "https://github.com/zattoo/use-double-click/issues"
   },
   "author": "Nitzan Nashi",
   "license": "MIT",
   "scripts": {
-    "build:copy": "node scripts/copy-src.js",
-    "build:dts": "tsc --build --verbose",
-    "build": "npm run build:copy && npm run build:dts",
-    "lint": "eslint . --ext .js,.jsx --cache --cache-location ./.tmp/.eslintcache"
+    "test:lint": "eslint . --ext .js,.jsx --cache --cache-location ./.tmp/.eslintcache",
+    "test:types": "tsc --noemit"
+  },
+  "dependencies": {
+    "react": "^16.8.0"
   },
   "devDependencies": {
-    "@types/node": "13.9.2",
-    "@types/react": "16.9.11",
+    "@types/react": "^16.9.11",
     "@zattoo/eslint-config": "^9.0.0",
     "eslint": "^6.8.0",
-    "fs-extra": "^9.0.0",
-    "react": "^16.13.1",
     "typescript": "^3.8.3"
   }
 }

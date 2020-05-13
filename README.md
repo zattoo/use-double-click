@@ -9,10 +9,6 @@ npm install @zattoo/use-double-click
 
 Make sure you have at least version 16.8 of `react` and `react-dom` installed, or otherwise hooks won't work for you.
 
-### Documentation and live example
-
-Article should come here...
-
 ### Usage
 ```jsx
 export const Example = () => {
@@ -53,8 +49,3 @@ export type clickEvent = (event?: import("react").SyntheticEvent<Element, Event>
 
 Open up an issue or pull request and participate.
 
----
-
-MIT License.
-
----

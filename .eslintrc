@@ -1,3 +1,7 @@
 {
-  "extends": ["@zattoo"]
+  "extends": ["@zattoo"],
+  "ignorePatterns": [
+    "node_modules",
+    "lib"
+  ]
 }

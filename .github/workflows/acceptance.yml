@@ -12,5 +12,4 @@ jobs:
           node-version: '14.x'
       - run: npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
       - run: npm ci
-      - run: npm run test:lint
-      - run: npm run test:types
+      - run: npm run test

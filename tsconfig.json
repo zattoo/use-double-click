@@ -1,6 +1,7 @@
 {
     "include": ["**/*"],
     "compilerOptions": {
+        "outDir": "./lib",
         "types": [],
         "moduleResolution": "node",
         "target": "esnext",
@@ -13,6 +14,8 @@
         "checkJs": true,
         "maxNodeModuleJsDepth": 30,
         "noEmitOnError": true,
+        "declaration": true,
+        "declarationMap": true,
         "strict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,

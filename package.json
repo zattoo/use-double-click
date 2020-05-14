@@ -13,13 +13,14 @@
     "double-click"
   ],
   "type": "module",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "bugs": {
     "url": "https://github.com/zattoo/use-double-click/issues"
   },
   "author": "Nitzan Nashi",
   "license": "MIT",
   "scripts": {
+    "build": "tsc --build --verbose",
     "test:lint": "eslint . --ext .js,.jsx --cache --cache-location ./.tmp/.eslintcache",
     "test:types": "tsc --noemit",
     "test": "npm run test:lint && npm run test:types"

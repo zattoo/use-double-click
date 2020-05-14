@@ -29,9 +29,9 @@
     "react": "^16.8.0"
   },
   "devDependencies": {
-    "@types/react": "^16.9.11",
-    "@zattoo/eslint-config": "^9.0.0",
-    "eslint": "^6.8.0",
-    "typescript": "^3.8.3"
+    "@types/react": "16.9.35",
+    "@zattoo/eslint-config": "9.0.0",
+    "eslint": "6.8.0",
+    "typescript": "3.9.2"
   }
 }

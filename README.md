@@ -1,6 +1,7 @@
 # useDoubleClick
 
 [React hook][0] for continuous double-clicks and combining click and double-click events
+
 See [Repeatable double-click and hybrid clicks solution with useDoubleClick hook][1] article for more details.
 ### Install
 

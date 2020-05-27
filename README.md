@@ -2,6 +2,8 @@
 
 [React hook][0] for continuous double-clicks and combining click and double-click events
 
+See [Repeatable double-click and hybrid clicks solution with useDoubleClick hook][1] article for more details.
+
 ### Install
 
 ```shell
@@ -42,3 +44,4 @@ export const Example = () => {
     - `timeout?: number` - number of milliseconds to detect double-click event
 
 [0]: https://reactjs.org/docs/hooks-intro.html
+[1]: https://medium.com/@nitzan.nashi/repeatable-double-click-and-hybrid-clicks-solution-with-usedoubleclick-hook-c6c64449abf7?sk=ed5c9edf3017fb2b7b277b76217fc393

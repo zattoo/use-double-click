@@ -42,3 +42,6 @@ export const Example = () => {
     - `timeout?: number` - number of milliseconds to detect double-click event
 
 [0]: https://reactjs.org/docs/hooks-intro.html
+
+### Article
+Read more and Learn how and why we created the hook [here](https://medium.com/@nitzan.nashi/repeatable-double-click-and-hybrid-clicks-solution-with-usedoubleclick-hook-c6c64449abf7?sk=ed5c9edf3017fb2b7b277b76217fc393)

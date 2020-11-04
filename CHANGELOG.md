@@ -5,7 +5,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
-Support react 17
+Support React 17
 
 ## [1.0.0] - 27.05.2020
 

@@ -5,7 +5,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
-Support React 17
+### Added
+- Support React 17
+
+### Infrastructure
+- `zploy` replaced with `@zattoo/publish`
 
 ## [1.0.0] - 27.05.2020
 

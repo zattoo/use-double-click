@@ -1,6 +1,6 @@
 {
   "name": "@zattoo/use-double-click",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React hook for continuous double-clicks and combining click and double-click events",
   "homepage": "https://github.com/zattoo/use-double-click",
   "repository": {

@@ -3,7 +3,7 @@ name: Publish
 on:
   push:
     branches:
-      - dump
+      - production
 
 env:
   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -19,7 +19,7 @@ jobs:
       - run: npm config set //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}
       - run: npm ci
       - run: npm run build
-      - uses: zattoo/publish@dev
+      - uses: zattoo/publish@v1
         with:
           github_token: ${{github.token}}
           npm_token: ${{secrets.NPM_TOKEN}}

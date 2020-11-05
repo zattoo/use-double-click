@@ -17,4 +17,7 @@ jobs:
       - run: npm ci
       - run: npm i @zattoo/zploy@1.0.0-rc.0 -g
       - run: npm run build
-      - run: zploy --gh_token=${{ secrets.GH_TOKEN }} --npm_token=${{ secrets.NPM_TOKEN }}
+      - uses: zattoo/publish@v1
+        with:
+          github_token: ${{github.token}}
+          npm_token: ${{secrets.NPM_TOKEN}}
